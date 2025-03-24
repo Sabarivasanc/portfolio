@@ -42,7 +42,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.2 }}
             >
-              <h1 className="text-5xl sm:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+              <h1 className="text-5xl sm:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 gradient-text bg-clip-text text-transparent">
                 Sabarivasan C
               </h1>
             </motion.div>
@@ -64,16 +64,16 @@ export default function Hero() {
               className="mb-6"
             >
               <div className="flex flex-wrap gap-2 mb-4">
-                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 text-primary hover:bg-primary/20">
+                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 badge-light text-primary hover:bg-primary/20 badge-hover">
                   Full Stack Development
                 </Badge>
-                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 text-primary hover:bg-primary/20">
+                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 badge-light text-primary hover:bg-primary/20 badge-hover">
                   Machine Learning
                 </Badge>
-                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 text-primary hover:bg-primary/20">
+                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 badge-light text-primary hover:bg-primary/20 badge-hover">
                   Python
                 </Badge>
-                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 text-primary hover:bg-primary/20">
+                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 badge-light text-primary hover:bg-primary/20 badge-hover">
                   JavaScript
                 </Badge>
               </div>
@@ -194,7 +194,7 @@ export default function Hero() {
               
               {/* Profile image */}
               <motion.div 
-                className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-background shadow-2xl"
+                className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-background profile-image-border shadow-2xl card-shadow highlight-shadow"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >

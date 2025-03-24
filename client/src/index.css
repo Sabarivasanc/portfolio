@@ -10,4 +10,56 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
+  
+  /* Custom Light Mode Improvements */
+  :root[data-theme="light"] {
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    --highlight-shadow: rgba(0, 118, 255, 0.1);
+  }
+  
+  /* Custom Dark Mode Colors */
+  :root[data-theme="dark"] {
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --highlight-shadow: rgba(0, 118, 255, 0.2);
+  }
+  
+  /* Improved cards for light theme */
+  .light .skill-card,
+  .light .project-card,
+  .light .certification-card {
+    @apply bg-white/50 shadow-md border border-slate-200;
+  }
+  
+  /* Improved background elements for light theme */
+  .light .badge-light {
+    @apply bg-primary/5 text-primary;
+  }
+  
+  .light .badge-hover {
+    @apply hover:bg-primary/10;
+  }
+  
+  /* Better profile image border in light mode */
+  .light .profile-image-border {
+    @apply border-white shadow-xl;
+  }
+  
+  /* Gradient text improvements for light mode */
+  .light .gradient-text {
+    @apply from-primary to-blue-700;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Common box shadow for cards */
+  .card-shadow {
+    box-shadow: 0 4px 20px var(--shadow-color);
+  }
+  
+  .highlight-shadow:hover {
+    box-shadow: 0 8px 30px var(--highlight-shadow);
+  }
 }

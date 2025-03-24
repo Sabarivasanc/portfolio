@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Switch, Route } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
-import { ThemeProvider, useTheme } from "./lib/theme-provider"; // Added theme provider
+import { ThemeProvider, useTheme } from "./lib/theme-provider"; // Theme provider with useTheme
 
 function Router() {
   return (
@@ -11,6 +11,16 @@ function Router() {
       <Route path="/" component={Home} />
       <Route component={NotFound} />
     </Switch>
+  );
+}
+
+function ThemeToggleButton() {
+  const { theme, setTheme } = useTheme();
+
+  return (
+    <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+      {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+    </button>
   );
 }
 
@@ -22,25 +32,13 @@ function App() {
   }, []);
 
   return (
-    <ThemeProvider defaultTheme="dark"> {/* Added ThemeProvider */}
+    <ThemeProvider defaultTheme="dark">
       <div>
-        <ThemeToggleButton /> {/* Added toggle button */}
+        <ThemeToggleButton />
         <Router />
         <Toaster />
       </div>
     </ThemeProvider>
-  );
-}
-
-import { useTheme } from './lib/theme-provider';
-
-function ThemeToggleButton() {
-  const { theme, setTheme } = useTheme();
-
-  return (
-    <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-      {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
-    </button>
   );
 }
 

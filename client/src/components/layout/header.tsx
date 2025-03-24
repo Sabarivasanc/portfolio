@@ -1,16 +1,18 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { DownloadIcon, Menu } from "lucide-react";
+import { DownloadIcon, Menu, Sun, Moon } from "lucide-react";
+import { useTheme } from "@/lib/theme-provider";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  
+  const { theme, setTheme } = useTheme();
+
   // Handle scroll effects
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -19,7 +21,7 @@ export default function Header() {
     const mobileMenu = document.getElementById('mobile-menu');
     mobileMenu?.classList.toggle('translate-x-full');
   };
-  
+
   const handleResumeDownload = () => {
     // Create a link to download the PDF resume
     const link = document.createElement('a');
@@ -39,7 +41,7 @@ export default function Header() {
           <a href="#home" className="text-2xl font-bold text-foreground">
             <span className="text-primary">S</span>abarivasan C
           </a>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             <a href="#home" className="nav-link hover:text-primary transition-colors relative">Home</a>
@@ -48,14 +50,28 @@ export default function Header() {
             <a href="#skills" className="nav-link hover:text-primary transition-colors relative">Skills</a>
             <a href="#projects" className="nav-link hover:text-primary transition-colors relative">Projects</a>
             <a href="#contact" className="nav-link hover:text-primary transition-colors relative">Contact</a>
-            
+
             <Button onClick={handleResumeDownload} size="sm" className="flex items-center">
               <DownloadIcon className="mr-2 h-4 w-4" />
               Resume
             </Button>
           </nav>
-          
-          {/* Mobile menu button */}
+
+          {/* Theme Toggle */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="mr-2"
+            onClick={() => {
+              setTheme(theme === "dark" ? "light" : "dark")
+            }}
+          >
+            <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <span className="sr-only">Toggle theme</span>
+          </Button>
+
+          {/* Mobile Menu Button */}
           <Button 
             id="open-menu" 
             variant="ghost" 
@@ -67,7 +83,7 @@ export default function Header() {
           </Button>
         </div>
       </div>
-      
+
       <style>{`
         .nav-link::after {
           content: '';
@@ -79,7 +95,7 @@ export default function Header() {
           background-color: hsl(var(--primary));
           transition: width 0.3s ease;
         }
-        
+
         .nav-link:hover::after,
         .nav-link.active::after {
           width: 100%;

@@ -325,24 +325,19 @@ export default function Contact() {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY // Public Key
       );
 
-      console.log("✅ Email Sent Successfully:", response.status, response.text);
+      console.log("Email Sent Successfully:", response.status, response.text);
       toast({
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon.",
       });
       form.reset();
     } catch (error) {
-      console.error("❌ Email Sending Failed:", error);
+      console.error(" Email Sending Failed:", error);
       toast({
         variant: "destructive",
         title: "Failed to send message",
         description: "Please try again later or contact me directly via email.",
       });
-      // Log EmailJS configuration for debugging
-      console.log("📌 EmailJS Service ID:", import.meta.env.VITE_APP_EMAILJS_SERVICE_ID);
-      console.log("📌 EmailJS Template ID:", import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID);
-      console.log("📌 EmailJS Public Key:", import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
-      console.log("📌 EmailJS Service ID:", import.meta.env);
       
     } finally {
       setIsSubmitting(false);

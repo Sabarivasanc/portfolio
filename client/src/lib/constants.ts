@@ -48,12 +48,27 @@ export const projectsData = [
     codeUrl: "https://github.com/Sabarivasanc/bosco"
   },
   {
+    title: "Professional Portfolio",
+    description: "Professional Portfolio with Light and Dark Theme Toggle",
+    image: "/portfolio.png",
+    technologies: ["HTML", "CSS", "Typescript"],
+    codeUrl: "https://github.com/Sabarivasanc/portfolio"
+  },
+  {
+    title: "Professional 3D Portfolio",
+    description: "Professional Portfolio with 3D Model still in development and its only work in desktop",
+    image: "/portfolio3d.png",
+    technologies: ["HTML", "CSS", "react","javacript","three js"],
+    codeUrl: "https://github.com/Sabarivasanc/portfolio"
+  },
+  {
     title: "Snake Game",
     description: "Classic snake game implementation with modern features",
     image: "/snake.png",
     technologies: ["Python", "Pygame", "Game Development"],
     codeUrl: "https://github.com/Sabarivasanc/snakegame"
   }
+
 ];
 
 // Certification data

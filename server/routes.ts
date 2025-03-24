@@ -56,20 +56,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.sendFile(resumePath);
   });
   
-  // Serve uploaded profile image (would be an actual image in production)
+  // Serve uploaded profile image
   app.get("/sabari-profile.jpg", (req: Request, res: Response) => {
-    // For demonstration, we'll return a placeholder image or message
     const imagePath = path.join(__dirname, "..", "public", "sabari-profile.jpg");
     
-    // If image doesn't exist, send a mock response
-    if (!fs.existsSync(imagePath)) {
-      return res.status(200).json({
-        message: "Image endpoint - this would serve the actual profile image in production"
-      });
+    if (fs.existsSync(imagePath)) {
+      return res.sendFile(imagePath);
+    } else {
+      console.error("Profile image not found at path:", imagePath);
+      return res.status(404).send("Profile image not found");
     }
-    
-    // In a real implementation, this would serve the actual file
-    res.sendFile(imagePath);
   });
 
   const httpServer = createServer(app);

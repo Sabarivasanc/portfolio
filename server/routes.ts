@@ -41,19 +41,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Serve the resume for download
   app.get("/resume.pdf", (req: Request, res: Response) => {
-    // For demonstration purposes, we'll check if the resume exists and serve it
-    // In a real implementation, you'd have the actual file
     const resumePath = path.join(__dirname, "..", "public", "resume.pdf");
     
-    // If resume doesn't exist (which it won't in the demo), send a mock response
-    if (!fs.existsSync(resumePath)) {
-      return res.status(200).json({
-        message: "Resume download endpoint - this would serve the actual PDF file in production"
-      });
+    if (fs.existsSync(resumePath)) {
+      return res.sendFile(resumePath);
+    } else {
+      console.error("Resume PDF not found at path:", resumePath);
+      return res.status(404).send("Resume PDF not found");
     }
-    
-    // In a real implementation, this would serve the actual file
-    res.sendFile(resumePath);
   });
   
   // Serve uploaded profile image

@@ -39,14 +39,12 @@ export default function TimelineItem({ title, subtitle, date, children, isLast =
           <h4 className="text-lg text-primary mb-4">{subtitle}</h4>
           
           {children && (
-            <ul className="space-y-2 text-muted-foreground">
-              {React.Children.map(children, (child, index) => (
-                <li key={index} className="flex items-start">
-                  <span className="text-secondary mr-3 mt-1"><CheckCircle size={16} /></span>
-                  <span>{child}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="text-muted-foreground">
+              <div className="flex items-start">
+                <span className="text-secondary mr-3 mt-1"><CheckCircle size={16} /></span>
+                <span>{children}</span>
+              </div>
+            </div>
           )}
         </CardContent>
       </Card>

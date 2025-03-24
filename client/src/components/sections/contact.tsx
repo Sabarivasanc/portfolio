@@ -17,7 +17,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import SectionHeading from "@/components/ui/section-heading";
-import { Envelope, Phone, MapPin, Globe, SendIcon } from "lucide-react";
+import { Mail, Phone, MapPin, Globe, Send } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 import { apiRequest } from "@/lib/queryClient";
@@ -92,7 +92,7 @@ export default function Contact() {
             <div className="space-y-6">
               <div className="flex items-start">
                 <span className="text-primary p-3 bg-muted/10 rounded-lg mr-4">
-                  <Envelope className="h-5 w-5" />
+                  <Mail className="h-5 w-5" />
                 </span>
                 <div>
                   <h4 className="font-medium mb-1">Email</h4>
@@ -236,7 +236,7 @@ export default function Contact() {
                     </span>
                   ) : (
                     <span className="flex items-center">
-                      <SendIcon className="mr-2 h-4 w-4" />
+                      <Send className="mr-2 h-4 w-4" />
                       Send Message
                     </span>
                   )}

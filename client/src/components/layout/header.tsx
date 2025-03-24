@@ -68,7 +68,7 @@ export default function Header() {
         </div>
       </div>
       
-      <style jsx>{`
+      <style>{`
         .nav-link::after {
           content: '';
           position: absolute;

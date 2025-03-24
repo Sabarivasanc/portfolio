@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import SectionHeading from "@/components/ui/section-heading";
-import { User, Mail, Phone, MapPin, Globe, Trophy, Code, Running } from "lucide-react";
+import { User, Mail, Phone, MapPin, Globe, Trophy, Code, Medal } from "lucide-react";
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -110,7 +110,7 @@ export default function About() {
                   <span>Solved 250+ problems on LeetCode</span>
                 </li>
                 <li className="flex items-center">
-                  <span className="text-secondary mr-3"><Running size={18} /></span>
+                  <span className="text-secondary mr-3"><Medal size={18} /></span>
                   <span>Member of the state-level throwball team (2018 – 2020)</span>
                 </li>
               </ul>

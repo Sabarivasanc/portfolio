@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <a href="#home" className="text-2xl font-bold mb-4">
-            <span className="text-primary">S</span>abarivasan
+            <span className="text-primary">Sabarivasan C</span>
           </a>
           
           <nav className="flex flex-wrap justify-center gap-6 mb-8">
@@ -20,10 +20,10 @@ export default function Footer() {
           </nav>
           
           <div className="flex gap-6 mb-8">
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://github.com/Sabarivasanc" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <FaGithub size={24} />
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/sabarivasan-c-a78267274/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <FaLinkedin size={24} />
             </a>
             <a href="https://leetcode.com/u/vsabari146/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">

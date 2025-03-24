@@ -36,7 +36,7 @@ export default function Header() {
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
-          <a href="#home" className="text-2xl font-bold">
+          <a href="#home" className="text-2xl font-bold text-foreground">
             <span className="text-primary">S</span>abarivasan C
           </a>
           

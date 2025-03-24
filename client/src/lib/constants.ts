@@ -52,39 +52,33 @@ export const projectsData = [
 // Certification data
 export const certificationsData = [
   {
-    title: "Acmegrade Cybersecurity Course",
-    skills: ["Network Security", "Ethical Hacking"],
-    issueDate: "2022",
-    url: "https://acmegrade.com/cert/123456"
+    title: "HackerRank Problem Solving Certificate",
+    skills: ["Data Structures", "Algorithms", "Problem Solving"],
+    issueDate: "2023",
+    url: "https://leetcode.com/u/vsabari146/"
   },
   {
-    title: "Machine Learning Internship Certificate",
-    skills: ["Python & TensorFlow", "Model Training"],
+    title: "GeeksforGeeks Problem Solving",
+    skills: ["DSA", "Competitive Programming"],
     issueDate: "2023",
-    url: "https://shiash.com/cert/123456"
+    url: "https://www.geeksforgeeks.org/user/vsabara3hq/"
   },
   {
-    title: "HackerRank Java Certification",
-    skills: ["OOP Concepts", "Data Structures & Algorithms"],
+    title: "Deep Learning & Colon Cancer Detection",
+    skills: ["Python", "Deep Learning", "Medical Image Processing"],
     issueDate: "2023",
-    url: "https://hackerrank.com/cert/123456"
+    url: "https://github.com/Sabarivasanc/Colon_Cancer_Detection_Using_Deep_Learning"
   },
   {
-    title: "HackerRank Python Certification",
-    skills: ["Core Concepts", "List Comprehensions & File Handling"],
+    title: "Full Stack Web Development",
+    skills: ["HTML/CSS", "JavaScript", "React", "Node.js"],
     issueDate: "2023",
-    url: "https://hackerrank.com/cert/123457"
+    url: "https://github.com/Sabarivasanc"
   },
   {
-    title: "HackerRank JavaScript Certification",
-    skills: ["ES6 Features", "DOM Manipulation & Async Programming"],
+    title: "Blood Bank Management System",
+    skills: ["Database Design", "Web Development", "System Architecture"],
     issueDate: "2023",
-    url: "https://hackerrank.com/cert/123458"
-  },
-  {
-    title: "Cisco JavaScript Badge",
-    skills: ["ES6 & Event Handling", "API Integration"],
-    issueDate: "2023",
-    url: "https://cisco.com/cert/123456"
+    url: "https://bloodbankmanangementsystem-2.onrender.com"
   }
 ];

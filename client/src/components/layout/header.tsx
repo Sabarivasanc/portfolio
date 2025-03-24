@@ -43,7 +43,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <motion.a 
             href="#home" 
-            className="py-2 text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent"
+            className="py-2 text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 gradient-heading bg-clip-text text-transparent"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}

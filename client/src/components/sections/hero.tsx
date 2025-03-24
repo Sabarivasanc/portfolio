@@ -42,7 +42,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.2 }}
             >
-              <h1 className="text-5xl sm:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 gradient-text bg-clip-text text-transparent">
+              <h1 className="text-5xl sm:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 gradient-heading bg-clip-text text-transparent">
                 Sabarivasan C
               </h1>
             </motion.div>
@@ -64,16 +64,16 @@ export default function Hero() {
               className="mb-6"
             >
               <div className="flex flex-wrap gap-2 mb-4">
-                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 badge-light text-primary hover:bg-primary/20 badge-hover">
+                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 text-primary hover:bg-primary/20 skill-badge">
                   Full Stack Development
                 </Badge>
-                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 badge-light text-primary hover:bg-primary/20 badge-hover">
+                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 text-primary hover:bg-primary/20 skill-badge">
                   Machine Learning
                 </Badge>
-                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 badge-light text-primary hover:bg-primary/20 badge-hover">
+                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 text-primary hover:bg-primary/20 skill-badge">
                   Python
                 </Badge>
-                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 badge-light text-primary hover:bg-primary/20 badge-hover">
+                <Badge variant="secondary" className="text-sm py-1 px-3 bg-primary/10 text-primary hover:bg-primary/20 skill-badge">
                   JavaScript
                 </Badge>
               </div>
@@ -113,7 +113,7 @@ export default function Hero() {
                 href="https://github.com/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="p-2 rounded-full bg-background hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all"
+                className="p-2 rounded-full bg-background social-icon transition-all"
                 aria-label="GitHub Profile"
               >
                 <FaGithub size={24} />
@@ -122,7 +122,7 @@ export default function Hero() {
                 href="https://linkedin.com/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="p-2 rounded-full bg-background hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all"
+                className="p-2 rounded-full bg-background social-icon transition-all"
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedin size={24} />
@@ -131,7 +131,7 @@ export default function Hero() {
                 href="https://leetcode.com/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="p-2 rounded-full bg-background hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all"
+                className="p-2 rounded-full bg-background social-icon transition-all"
                 aria-label="LeetCode Profile"
               >
                 <SiLeetcode size={24} />
@@ -140,7 +140,7 @@ export default function Hero() {
                 href="https://geeksforgeeks.org/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="p-2 rounded-full bg-background hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all"
+                className="p-2 rounded-full bg-background social-icon transition-all"
                 aria-label="GeeksForGeeks Profile"
               >
                 <SiGeeksforgeeks size={24} />
@@ -171,7 +171,7 @@ export default function Hero() {
 
               {/* Profile achievement banners */}
               <motion.div 
-                className="absolute -top-5 -right-5 md:right-0 z-10 bg-background/80 backdrop-blur-md p-2 rounded-lg border border-primary/20 shadow-lg"
+                className="absolute -top-5 -right-5 md:right-0 z-10 backdrop-blur-md p-2 rounded-lg border border-primary/20 achievement-badge"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.4 }}
@@ -182,7 +182,7 @@ export default function Hero() {
               </motion.div>
               
               <motion.div 
-                className="absolute -bottom-5 -left-5 md:left-0 z-10 bg-background/80 backdrop-blur-md p-2 rounded-lg border border-primary/20 shadow-lg"
+                className="absolute -bottom-5 -left-5 md:left-0 z-10 backdrop-blur-md p-2 rounded-lg border border-primary/20 achievement-badge"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 0.4 }}
@@ -194,7 +194,7 @@ export default function Hero() {
               
               {/* Profile image */}
               <motion.div 
-                className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-background profile-image-border shadow-2xl card-shadow highlight-shadow"
+                className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-background profile-image card-shadow profile-container"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >

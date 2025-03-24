@@ -59,33 +59,57 @@ export const projectsData = [
 // Certification data
 export const certificationsData = [
   {
-    title: "HackerRank Problem Solving Certificate",
-    skills: ["Data Structures", "Algorithms", "Problem Solving"],
-    issueDate: "2023",
-    url: "https://leetcode.com/u/vsabari146/"
+    title: "CSS Certificate",
+    skills: ["CSS", "Web Design", "Styling"],
+    issueDate: "2024",
+    url: "https://www.hackerrank.com/certificates/iframe/768b8c3d7a7a"
   },
   {
-    title: "GeeksforGeeks Problem Solving",
-    skills: ["DSA", "Competitive Programming"],
-    issueDate: "2023",
-    url: "https://www.geeksforgeeks.org/user/vsabara3hq/"
+    title: "Python Certificate",
+    skills: ["Python", "Programming", "Data Structures"],
+    issueDate: "2024",
+    url: "https://www.hackerrank.com/certificates/iframe/6a1d50d64611"
   },
   {
-    title: "Deep Learning & Colon Cancer Detection",
-    skills: ["Python", "Deep Learning", "Medical Image Processing"],
-    issueDate: "2023",
-    url: "https://github.com/Sabarivasanc/Colon_Cancer_Detection_Using_Deep_Learning"
+    title: "Java Certificate",
+    skills: ["Java", "OOP", "Programming"],
+    issueDate: "2024",
+    url: "https://www.hackerrank.com/certificates/iframe/d1dd09271114"
   },
   {
-    title: "Full Stack Web Development",
-    skills: ["HTML/CSS", "JavaScript", "React", "Node.js"],
-    issueDate: "2023",
-    url: "https://github.com/Sabarivasanc"
+    title: "JavaScript Certificate",
+    skills: ["JavaScript", "Web Development", "Programming"],
+    issueDate: "2024",
+    url: "https://www.hackerrank.com/certificates/iframe/4faf9d29186f"
   },
   {
-    title: "Blood Bank Management System",
-    skills: ["Database Design", "Web Development", "System Architecture"],
-    issueDate: "2023",
-    url: "https://bloodbankmanangementsystem-2.onrender.com"
+    title: "Problem Solving Basic",
+    skills: ["Algorithms", "Data Structures", "Problem Solving"],
+    issueDate: "2024",
+    url: "https://www.hackerrank.com/certificates/iframe/2c34c422a44b"
+  },
+  {
+    title: "Problem Solving Intermediate",
+    skills: ["Advanced Algorithms", "Complex Problem Solving"],
+    issueDate: "2024",
+    url: "https://www.hackerrank.com/certificates/iframe/cc0f3ed5e515"
+  },
+  {
+    title: "Cybersecurity Certificate",
+    skills: ["Security", "Network Security", "Information Security"],
+    issueDate: "2024",
+    url: "https://cert.diceid.com/cid/lIHPDbheuj"
+  },
+  {
+    title: "JavaScript Essential Badge",
+    skills: ["JavaScript", "Web Development"],
+    issueDate: "2024",
+    url: "https://www.credly.com/badges/bd1ec0ad-7b8f-4976-b1f3-0d276a9f9a5c"
+  },
+  {
+    title: "Deloitte Technology Simulation",
+    skills: ["Technology", "Professional Development"],
+    issueDate: "2024",
+    url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_rfrJwXAL9KEugnoNS_1738740510908_completion_certificate.pdf"
   }
 ];

@@ -63,10 +63,10 @@ const MobileNav = forwardRef(({ onToggle }: MobileNavProps, ref: ForwardedRef<HT
           <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <FaLinkedin size={24} />
           </a>
-          <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="https://leetcode.com/u/vsabari146/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <SiLeetcode size={24} />
           </a>
-          <a href="https://geeksforgeeks.org/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="https://www.geeksforgeeks.org/user/vsabara3hq/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <SiGeeksforgeeks size={24} />
           </a>
         </div>

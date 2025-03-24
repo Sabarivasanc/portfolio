@@ -19,7 +19,7 @@ export default function CodingProfiles() {
               { count: "75+", label: "Medium", color: "text-yellow-500" },
               { count: "25+", label: "Hard", color: "text-red-500" }
             ]}
-            profileUrl="https://leetcode.com/"
+            profileUrl="https://leetcode.com/u/vsabari146/"
             progressPercentage={75}
           />
           
@@ -33,7 +33,7 @@ export default function CodingProfiles() {
               { count: "20+", label: "Basic", color: "text-yellow-500" },
               { count: "5+", label: "Medium", color: "text-orange-500" }
             ]}
-            profileUrl="https://geeksforgeeks.org/"
+            profileUrl="https://www.geeksforgeeks.org/user/vsabara3hq/"
             progressPercentage={60}
           />
         </div>

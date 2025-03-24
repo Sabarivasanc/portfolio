@@ -43,17 +43,79 @@
     @apply text-gray-700 hover:text-primary hover:bg-primary/5;
   }
   
+  :root[data-theme="light"] .project-card {
+    @apply bg-white border border-slate-200;
+  }
+  
+  :root[data-theme="light"] .certification-card {
+    @apply bg-white border border-slate-200;
+  }
+  
+  :root[data-theme="light"] .alternate-section::before {
+    @apply bg-slate-100/50;
+  }
+  
   /* Dark theme styles */
   :root[data-theme="dark"] .achievement-badge {
-    @apply bg-background/80;
+    @apply bg-background/80 border-primary/20;
   }
   
   :root[data-theme="dark"] .social-icon {
     @apply text-muted-foreground hover:text-primary hover:bg-primary/10;
   }
   
+  :root[data-theme="dark"] .project-card {
+    @apply bg-card/50 border-primary/10;
+  }
+  
+  :root[data-theme="dark"] .certification-card {
+    @apply bg-card/50 border-primary/10;
+  }
+  
+  :root[data-theme="dark"] .alternate-section::before {
+    @apply bg-slate-900/30;
+  }
+  
   /* Common styles for both themes */
   .card-shadow {
     @apply shadow-lg transition-shadow hover:shadow-xl;
+  }
+  
+  .gradient-heading {
+    @apply bg-gradient-to-r bg-clip-text text-transparent font-bold;
+  }
+  
+  .skill-badge {
+    @apply rounded-full px-3 py-1 text-xs font-medium inline-flex items-center transition-all duration-300;
+  }
+  
+  .project-card, .certification-card {
+    @apply rounded-lg overflow-hidden transition-all duration-300 hover:scale-[1.02];
+  }
+  
+  .animated-gradient-bg {
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+  }
+  
+  .achievement-badge {
+    @apply backdrop-blur-md shadow-lg;
+  }
+  
+  /* Animations */
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .floating {
+    animation: float 4s ease-in-out infinite;
   }
 }

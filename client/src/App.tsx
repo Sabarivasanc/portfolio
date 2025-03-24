@@ -14,15 +14,7 @@ function Router() {
   );
 }
 
-function ThemeToggleButton() {
-  const { theme, setTheme } = useTheme();
-
-  return (
-    <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-      {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
-    </button>
-  );
-}
+// Theme toggle button has been moved to the header component
 
 function App() {
   useEffect(() => {
@@ -34,7 +26,6 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark">
       <div>
-        <ThemeToggleButton />
         <Router />
         <Toaster />
       </div>

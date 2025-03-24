@@ -37,7 +37,7 @@ export default function Header() {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
           <a href="#home" className="text-2xl font-bold">
-            <span className="text-primary">S</span>abarivasan
+            <span className="text-primary">S</span>abarivasan C
           </a>
           
           {/* Desktop Navigation */}

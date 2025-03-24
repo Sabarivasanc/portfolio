@@ -1,51 +1,58 @@
 // Project data
 export const projectsData = [
   {
-    title: "E-commerce Website",
-    description: "A fully responsive e-commerce website with product filtering, cart functionality, and checkout process.",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    liveUrl: "https://ecommerce-demo.com",
-    codeUrl: "https://github.com/sabarivasan/ecommerce"
-  },
-  {
     title: "Blood Bank Management System",
-    description: "A full-stack web application for managing blood donations and requests with admin panel.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    technologies: ["HTML", "CSS", "JavaScript", "Django"],
-    liveUrl: "https://bloodbank-demo.com",
-    codeUrl: "https://github.com/sabarivasan/bloodbank"
-  },
-  {
-    title: "Snake Game in Java",
-    description: "A classic Snake game with OOP principles, dynamic difficulty levels, and user-friendly interface.",
-    image: "https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    technologies: ["Java", "Java Swing", "OOP"],
-    liveUrl: "https://snakegame-demo.com",
-    codeUrl: "https://github.com/sabarivasan/snakegame"
+    description: "A comprehensive system for managing blood bank operations, donor records, and blood requests",
+    image: "/project-blood-bank.jpg",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    liveUrl: "https://bloodbankmanangementsystem-2.onrender.com",
+    codeUrl: "https://github.com/Sabarivasanc"
   },
   {
     title: "Colon Cancer Detection",
-    description: "A CNN model for detecting colon cancer from medical images with 95% accuracy.",
-    image: "https://images.unsplash.com/photo-1576670159375-8eae76902ba8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    technologies: ["Python", "TensorFlow", "Keras", "CNN"],
-    codeUrl: "https://github.com/sabarivasan/colon-cancer-detection"
+    description: "Deep learning model for detecting colon cancer using medical imaging",
+    image: "/project-cancer.jpg",
+    technologies: ["Python", "TensorFlow", "Deep Learning", "OpenCV"],
+    codeUrl: "https://github.com/Sabarivasanc/Colon_Cancer_Detection_Using_Deep_Learning"
   },
   {
-    title: "Personal Blog",
-    description: "A responsive personal blog website with comment section and admin dashboard.",
-    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    technologies: ["HTML", "CSS", "JavaScript", "Django"],
-    liveUrl: "https://blog-demo.com",
-    codeUrl: "https://github.com/sabarivasan/blog"
+    title: "Maakan Website",
+    description: "Real estate website with modern design and responsive interface",
+    image: "/project-maakan.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    liveUrl: "https://sabarivasanc.github.io/Maakan-website/",
+    codeUrl: "https://github.com/Sabarivasanc/Maakan-website"
   },
   {
-    title: "Task Manager App",
-    description: "A to-do list application with user authentication, task categorization, and reminder functionality.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80",
-    technologies: ["HTML", "CSS", "JavaScript", "Django"],
-    liveUrl: "https://taskmanager-demo.com",
-    codeUrl: "https://github.com/sabarivasan/taskmanager"
+    title: "RMRC Clone",
+    description: "A responsive clone of RMRC website showcasing frontend development skills",
+    image: "/project-rmrc.jpg",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://sabarivasanc.github.io/rmrc-clone/",
+    codeUrl: "https://github.com/Sabarivasanc/rmrc-clone"
+  },
+  {
+    title: "BR Architect",
+    description: "Architecture firm website with modern design and portfolio showcase",
+    image: "/project-architect.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    liveUrl: "https://sabarivasanc.github.io/br-architect/",
+    codeUrl: "https://github.com/Sabarivasanc/br-architect"
+  },
+  {
+    title: "Bosco Website",
+    description: "Corporate website with clean and professional design",
+    image: "/project-bosco.jpg",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://sabarivasanc.github.io/bosco/",
+    codeUrl: "https://github.com/Sabarivasanc/bosco"
+  },
+  {
+    title: "Snake Game",
+    description: "Classic snake game implementation with modern features",
+    image: "/project-snake.jpg",
+    technologies: ["Python", "Pygame", "Game Development"],
+    codeUrl: "https://github.com/Sabarivasanc/snakegame"
   }
 ];
 
